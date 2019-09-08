@@ -34,5 +34,10 @@ TARGET_OTA_ASSERT_DEVICE := dumpling,OnePlus5T,oneplus5t
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/lib/libui.so|libui_shim.so \
+    /system/lib64/libui.so|libui_shim.so
+
 # inherit from the proprietary version
 -include vendor/oneplus/dumpling/BoardConfigVendor.mk
