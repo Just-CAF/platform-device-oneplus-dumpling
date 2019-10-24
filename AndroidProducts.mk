@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_dumpling.mk
+    $(LOCAL_DIR)/aosp_dumpling.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_dumpling-userdebug
