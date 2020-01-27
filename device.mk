@@ -45,6 +45,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gf_input.kl:system/usr/keylayout/gf_input.kl
 
+# RRO
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 # Shims
 PRODUCT_PACKAGES += \
     libui_shim
